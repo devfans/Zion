@@ -23,9 +23,9 @@ import (
 	"io/ioutil"
 	"testing"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/crypto"
-	"github.com/ethereum/go-ethereum/params"
+	"github.com/devfans/zion/common"
+	"github.com/devfans/zion/crypto"
+	"github.com/devfans/zion/params"
 	"github.com/holiman/uint256"
 )
 

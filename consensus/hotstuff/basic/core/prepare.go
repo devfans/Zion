@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/ethereum/go-ethereum/consensus/hotstuff"
-	"github.com/ethereum/go-ethereum/core/types"
+	"github.com/devfans/zion/consensus/hotstuff"
+	"github.com/devfans/zion/core/types"
 )
 
 func (c *core) sendPrepare() {

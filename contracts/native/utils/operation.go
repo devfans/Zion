@@ -21,7 +21,7 @@ import (
 	"encoding/binary"
 	"fmt"
 
-	"github.com/ethereum/go-ethereum/common"
+	"github.com/devfans/zion/common"
 	"github.com/ontio/ontology-crypto/vrf"
 	vbftconfig "github.com/polynetwork/poly/consensus/vbft/config"
 )

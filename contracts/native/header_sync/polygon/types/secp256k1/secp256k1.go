@@ -25,7 +25,7 @@ import (
 	"math/big"
 
 	secp256k1 "github.com/btcsuite/btcd/btcec"
-	ethCrypto "github.com/ethereum/go-ethereum/crypto"
+	ethCrypto "github.com/devfans/zion/crypto"
 
 	amino "github.com/tendermint/go-amino"
 

@@ -19,11 +19,11 @@ package core
 import (
 	"sync/atomic"
 
-	"github.com/ethereum/go-ethereum/consensus"
-	"github.com/ethereum/go-ethereum/core/state"
-	"github.com/ethereum/go-ethereum/core/types"
-	"github.com/ethereum/go-ethereum/core/vm"
-	"github.com/ethereum/go-ethereum/params"
+	"github.com/devfans/zion/consensus"
+	"github.com/devfans/zion/core/state"
+	"github.com/devfans/zion/core/types"
+	"github.com/devfans/zion/core/vm"
+	"github.com/devfans/zion/params"
 )
 
 // statePrefetcher is a basic Prefetcher, which blindly executes a block on top

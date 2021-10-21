@@ -22,13 +22,13 @@ import (
 	"fmt"
 	"sort"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/contracts/native"
-	. "github.com/ethereum/go-ethereum/contracts/native/go_abi/node_manager_abi"
-	"github.com/ethereum/go-ethereum/contracts/native/utils"
-	"github.com/ethereum/go-ethereum/core/types"
-	"github.com/ethereum/go-ethereum/event"
-	"github.com/ethereum/go-ethereum/log"
+	"github.com/devfans/zion/common"
+	"github.com/devfans/zion/contracts/native"
+	. "github.com/devfans/zion/contracts/native/go_abi/node_manager_abi"
+	"github.com/devfans/zion/contracts/native/utils"
+	"github.com/devfans/zion/core/types"
+	"github.com/devfans/zion/event"
+	"github.com/devfans/zion/log"
 )
 
 var epochChangeFeed event.Feed

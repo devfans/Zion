@@ -4,10 +4,10 @@ import (
 	"fmt"
 	"io"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/consensus/hotstuff"
-	"github.com/ethereum/go-ethereum/core/types"
-	"github.com/ethereum/go-ethereum/rlp"
+	"github.com/devfans/zion/common"
+	"github.com/devfans/zion/consensus/hotstuff"
+	"github.com/devfans/zion/core/types"
+	"github.com/devfans/zion/rlp"
 )
 
 var (

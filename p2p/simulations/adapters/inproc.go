@@ -24,13 +24,13 @@ import (
 	"net"
 	"sync"
 
-	"github.com/ethereum/go-ethereum/event"
-	"github.com/ethereum/go-ethereum/log"
-	"github.com/ethereum/go-ethereum/node"
-	"github.com/ethereum/go-ethereum/p2p"
-	"github.com/ethereum/go-ethereum/p2p/enode"
-	"github.com/ethereum/go-ethereum/p2p/simulations/pipes"
-	"github.com/ethereum/go-ethereum/rpc"
+	"github.com/devfans/zion/event"
+	"github.com/devfans/zion/log"
+	"github.com/devfans/zion/node"
+	"github.com/devfans/zion/p2p"
+	"github.com/devfans/zion/p2p/enode"
+	"github.com/devfans/zion/p2p/simulations/pipes"
+	"github.com/devfans/zion/rpc"
 	"github.com/gorilla/websocket"
 )
 

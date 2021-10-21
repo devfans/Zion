@@ -21,12 +21,12 @@ package core
 import (
 	"time"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/consensus"
-	"github.com/ethereum/go-ethereum/consensus/hotstuff"
-	"github.com/ethereum/go-ethereum/ethdb"
-	"github.com/ethereum/go-ethereum/event"
-	"github.com/ethereum/go-ethereum/log"
+	"github.com/devfans/zion/common"
+	"github.com/devfans/zion/consensus"
+	"github.com/devfans/zion/consensus/hotstuff"
+	"github.com/devfans/zion/ethdb"
+	"github.com/devfans/zion/event"
+	"github.com/devfans/zion/log"
 )
 
 // core implement event-driven hotstuff protocol, it obtains:

@@ -20,8 +20,8 @@ package common
 import (
 	"fmt"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/contracts/native"
+	"github.com/devfans/zion/common"
+	"github.com/devfans/zion/contracts/native"
 	polycomm "github.com/polynetwork/poly/common"
 )
 

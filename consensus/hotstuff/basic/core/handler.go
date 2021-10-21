@@ -22,11 +22,11 @@ import (
 	"sync"
 	"time"
 
-	"github.com/ethereum/go-ethereum/log"
+	"github.com/devfans/zion/log"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/consensus"
-	"github.com/ethereum/go-ethereum/consensus/hotstuff"
+	"github.com/devfans/zion/common"
+	"github.com/devfans/zion/consensus"
+	"github.com/devfans/zion/consensus/hotstuff"
 )
 
 var once sync.Once

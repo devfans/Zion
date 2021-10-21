@@ -19,18 +19,18 @@ package eth
 import (
 	"errors"
 	"fmt"
-	"github.com/ethereum/go-ethereum/consensus"
+	"github.com/devfans/zion/consensus"
 	"math/big"
 	"sync/atomic"
 	"time"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/core"
-	"github.com/ethereum/go-ethereum/core/types"
-	"github.com/ethereum/go-ethereum/eth/protocols/eth"
-	"github.com/ethereum/go-ethereum/log"
-	"github.com/ethereum/go-ethereum/p2p/enode"
-	"github.com/ethereum/go-ethereum/trie"
+	"github.com/devfans/zion/common"
+	"github.com/devfans/zion/core"
+	"github.com/devfans/zion/core/types"
+	"github.com/devfans/zion/eth/protocols/eth"
+	"github.com/devfans/zion/log"
+	"github.com/devfans/zion/p2p/enode"
+	"github.com/devfans/zion/trie"
 )
 
 // ethHandler implements the eth.Backend interface to handle the various network

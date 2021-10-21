@@ -17,25 +17,25 @@
 package eth
 
 import (
-	"github.com/ethereum/go-ethereum/consensus"
+	"github.com/devfans/zion/consensus"
 	"math"
 	"math/big"
 	"math/rand"
 	"testing"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/consensus/ethash"
-	"github.com/ethereum/go-ethereum/core"
-	"github.com/ethereum/go-ethereum/core/rawdb"
-	"github.com/ethereum/go-ethereum/core/state"
-	"github.com/ethereum/go-ethereum/core/types"
-	"github.com/ethereum/go-ethereum/core/vm"
-	"github.com/ethereum/go-ethereum/crypto"
-	"github.com/ethereum/go-ethereum/ethdb"
-	"github.com/ethereum/go-ethereum/p2p"
-	"github.com/ethereum/go-ethereum/p2p/enode"
-	"github.com/ethereum/go-ethereum/params"
-	"github.com/ethereum/go-ethereum/trie"
+	"github.com/devfans/zion/common"
+	"github.com/devfans/zion/consensus/ethash"
+	"github.com/devfans/zion/core"
+	"github.com/devfans/zion/core/rawdb"
+	"github.com/devfans/zion/core/state"
+	"github.com/devfans/zion/core/types"
+	"github.com/devfans/zion/core/vm"
+	"github.com/devfans/zion/crypto"
+	"github.com/devfans/zion/ethdb"
+	"github.com/devfans/zion/p2p"
+	"github.com/devfans/zion/p2p/enode"
+	"github.com/devfans/zion/params"
+	"github.com/devfans/zion/trie"
 )
 
 var (

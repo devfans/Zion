@@ -26,11 +26,11 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/ethdb"
-	"github.com/ethereum/go-ethereum/log"
-	"github.com/ethereum/go-ethereum/metrics"
-	"github.com/ethereum/go-ethereum/params"
+	"github.com/devfans/zion/common"
+	"github.com/devfans/zion/ethdb"
+	"github.com/devfans/zion/log"
+	"github.com/devfans/zion/metrics"
+	"github.com/devfans/zion/params"
 	"github.com/prometheus/tsdb/fileutil"
 )
 

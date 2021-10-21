@@ -22,9 +22,9 @@ import (
 	"fmt"
 	"math/big"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/consensus/hotstuff"
-	"github.com/ethereum/go-ethereum/contracts/native/utils"
+	"github.com/devfans/zion/common"
+	"github.com/devfans/zion/consensus/hotstuff"
+	"github.com/devfans/zion/contracts/native/utils"
 )
 
 // increaseLastVoteRound commit not to vote in rounds lower than target

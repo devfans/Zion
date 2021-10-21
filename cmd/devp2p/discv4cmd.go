@@ -22,12 +22,12 @@ import (
 	"strings"
 	"time"
 
-	"github.com/ethereum/go-ethereum/cmd/devp2p/internal/v4test"
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/crypto"
-	"github.com/ethereum/go-ethereum/p2p/discover"
-	"github.com/ethereum/go-ethereum/p2p/enode"
-	"github.com/ethereum/go-ethereum/params"
+	"github.com/devfans/zion/cmd/devp2p/internal/v4test"
+	"github.com/devfans/zion/common"
+	"github.com/devfans/zion/crypto"
+	"github.com/devfans/zion/p2p/discover"
+	"github.com/devfans/zion/p2p/enode"
+	"github.com/devfans/zion/params"
 	"gopkg.in/urfave/cli.v1"
 )
 

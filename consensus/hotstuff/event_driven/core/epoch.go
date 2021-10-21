@@ -22,7 +22,7 @@ import (
 	"fmt"
 	"math/big"
 
-	"github.com/ethereum/go-ethereum/core/types"
+	"github.com/devfans/zion/core/types"
 )
 
 //todo: epoch manager

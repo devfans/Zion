@@ -23,9 +23,9 @@ import (
 	"fmt"
 	"github.com/Zilliqa/gozilliqa-sdk/core"
 	"github.com/Zilliqa/gozilliqa-sdk/util"
-	"github.com/ethereum/go-ethereum/contracts/native"
-	scom "github.com/ethereum/go-ethereum/contracts/native/header_sync/common"
-	"github.com/ethereum/go-ethereum/contracts/native/utils"
+	"github.com/devfans/zion/contracts/native"
+	scom "github.com/devfans/zion/contracts/native/header_sync/common"
+	"github.com/devfans/zion/contracts/native/utils"
 	cstates "github.com/polynetwork/poly/core/states"
 )
 

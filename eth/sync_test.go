@@ -21,10 +21,10 @@ import (
 	"testing"
 	"time"
 
-	"github.com/ethereum/go-ethereum/eth/downloader"
-	"github.com/ethereum/go-ethereum/eth/protocols/eth"
-	"github.com/ethereum/go-ethereum/p2p"
-	"github.com/ethereum/go-ethereum/p2p/enode"
+	"github.com/devfans/zion/eth/downloader"
+	"github.com/devfans/zion/eth/protocols/eth"
+	"github.com/devfans/zion/p2p"
+	"github.com/devfans/zion/p2p/enode"
 )
 
 // Tests that fast sync is disabled after a successful sync cycle.

@@ -4,8 +4,8 @@ import (
 	"sync"
 	"time"
 
-	"github.com/ethereum/go-ethereum/common/prque"
-	"github.com/ethereum/go-ethereum/consensus/hotstuff"
+	"github.com/devfans/zion/common/prque"
+	"github.com/devfans/zion/consensus/hotstuff"
 )
 
 func (c *core) handleRequest(req *hotstuff.Request) error {

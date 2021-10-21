@@ -21,7 +21,7 @@ package node_manager
 import (
 	"testing"
 
-	"github.com/ethereum/go-ethereum/rlp"
+	"github.com/devfans/zion/rlp"
 	"github.com/stretchr/testify/assert"
 )
 

@@ -21,9 +21,9 @@ package geth
 import (
 	"encoding/json"
 
-	"github.com/ethereum/go-ethereum/core"
-	"github.com/ethereum/go-ethereum/p2p/enode"
-	"github.com/ethereum/go-ethereum/params"
+	"github.com/devfans/zion/core"
+	"github.com/devfans/zion/p2p/enode"
+	"github.com/devfans/zion/params"
 )
 
 // MainnetGenesis returns the JSON spec to use for the main Ethereum network. It

@@ -20,9 +20,9 @@ import (
 	"hash"
 	"sync/atomic"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/common/math"
-	"github.com/ethereum/go-ethereum/log"
+	"github.com/devfans/zion/common"
+	"github.com/devfans/zion/common/math"
+	"github.com/devfans/zion/log"
 )
 
 // Config are the configuration options for the Interpreter

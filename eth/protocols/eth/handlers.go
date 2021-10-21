@@ -20,11 +20,11 @@ import (
 	"encoding/json"
 	"fmt"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/core/types"
-	"github.com/ethereum/go-ethereum/log"
-	"github.com/ethereum/go-ethereum/rlp"
-	"github.com/ethereum/go-ethereum/trie"
+	"github.com/devfans/zion/common"
+	"github.com/devfans/zion/core/types"
+	"github.com/devfans/zion/log"
+	"github.com/devfans/zion/rlp"
+	"github.com/devfans/zion/trie"
 )
 
 // handleGetBlockHeaders handles Block header query, collect the requested headers and reply

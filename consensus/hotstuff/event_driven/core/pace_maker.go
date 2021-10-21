@@ -23,7 +23,7 @@ import (
 	"math/big"
 	"time"
 
-	"github.com/ethereum/go-ethereum/consensus/hotstuff"
+	"github.com/devfans/zion/consensus/hotstuff"
 )
 
 func (c *core) updateHighestCommittedRound(round *big.Int) {

@@ -21,9 +21,9 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/ethereum/go-ethereum/accounts/abi"
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/contracts/native/go_abi/relayer_manager_abi"
+	"github.com/devfans/zion/accounts/abi"
+	"github.com/devfans/zion/common"
+	"github.com/devfans/zion/contracts/native/go_abi/relayer_manager_abi"
 	polycomm "github.com/polynetwork/poly/common"
 )
 

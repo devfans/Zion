@@ -17,7 +17,7 @@
  */
 package utils
 
-import "github.com/ethereum/go-ethereum/common"
+import "github.com/devfans/zion/common"
 
 type BtcNetType int
 

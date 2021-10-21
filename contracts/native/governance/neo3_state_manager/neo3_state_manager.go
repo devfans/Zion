@@ -18,9 +18,9 @@
 package neo3_state_manager
 
 import (
-	"github.com/ethereum/go-ethereum/accounts/abi"
-	"github.com/ethereum/go-ethereum/contracts/native"
-	"github.com/ethereum/go-ethereum/contracts/native/utils"
+	"github.com/devfans/zion/accounts/abi"
+	"github.com/devfans/zion/contracts/native"
+	"github.com/devfans/zion/contracts/native/utils"
 )
 
 const contractName = "neo3 state manager"

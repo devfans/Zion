@@ -21,9 +21,9 @@ import (
 	"reflect"
 	"unsafe"
 
-	"github.com/ethereum/go-ethereum/common/bitutil"
-	"github.com/ethereum/go-ethereum/contracts/native"
-	"github.com/ethereum/go-ethereum/contracts/native/utils"
+	"github.com/devfans/zion/common/bitutil"
+	"github.com/devfans/zion/contracts/native"
+	"github.com/devfans/zion/contracts/native/utils"
 	"github.com/polynetwork/poly/core/states"
 	"github.com/polynetwork/poly/native/service/header_sync/common"
 	"golang.org/x/crypto/sha3"

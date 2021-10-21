@@ -6,8 +6,8 @@ import (
 	"math/rand"
 	"testing"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/core/rawdb"
+	"github.com/devfans/zion/common"
+	"github.com/devfans/zion/core/rawdb"
 )
 
 func TestCacheDB(t *testing.T) {

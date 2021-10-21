@@ -22,13 +22,13 @@ import (
 	"reflect"
 	"time"
 
-	"github.com/ethereum/go-ethereum/core/types"
-	"github.com/ethereum/go-ethereum/crypto"
-	"github.com/ethereum/go-ethereum/eth/protocols/eth"
-	"github.com/ethereum/go-ethereum/internal/utesting"
-	"github.com/ethereum/go-ethereum/p2p"
-	"github.com/ethereum/go-ethereum/p2p/rlpx"
-	"github.com/ethereum/go-ethereum/rlp"
+	"github.com/devfans/zion/core/types"
+	"github.com/devfans/zion/crypto"
+	"github.com/devfans/zion/eth/protocols/eth"
+	"github.com/devfans/zion/internal/utesting"
+	"github.com/devfans/zion/p2p"
+	"github.com/devfans/zion/p2p/rlpx"
+	"github.com/devfans/zion/rlp"
 )
 
 type Message interface {

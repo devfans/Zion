@@ -25,35 +25,35 @@ import (
 	"math/big"
 	"reflect"
 
-	ethcommon "github.com/ethereum/go-ethereum/common"
+	ethcommon "github.com/devfans/zion/common"
 
 	"github.com/polynetwork/poly/common"
 
-	"github.com/ethereum/go-ethereum/contracts/native"
+	"github.com/devfans/zion/contracts/native"
 
-	scom "github.com/ethereum/go-ethereum/contracts/native/header_sync/common"
-	"github.com/ethereum/go-ethereum/contracts/native/header_sync/cosmos"
-	"github.com/ethereum/go-ethereum/contracts/native/header_sync/zilliqa"
+	scom "github.com/devfans/zion/contracts/native/header_sync/common"
+	"github.com/devfans/zion/contracts/native/header_sync/cosmos"
+	"github.com/devfans/zion/contracts/native/header_sync/zilliqa"
 
-	"github.com/ethereum/go-ethereum/contracts/native/utils"
+	"github.com/devfans/zion/contracts/native/utils"
 
-	"github.com/ethereum/go-ethereum/contracts/native/governance/side_chain_manager"
+	"github.com/devfans/zion/contracts/native/governance/side_chain_manager"
 
-	"github.com/ethereum/go-ethereum/core/rawdb"
-	"github.com/ethereum/go-ethereum/core/state"
+	"github.com/devfans/zion/core/rawdb"
+	"github.com/devfans/zion/core/state"
 
 	"strings"
 	"testing"
 
 	"github.com/stretchr/testify/assert"
 
-	"github.com/ethereum/go-ethereum/contracts/native/cross_chain_manager"
-	"github.com/ethereum/go-ethereum/contracts/native/governance"
-	"github.com/ethereum/go-ethereum/contracts/native/governance/neo3_state_manager"
-	"github.com/ethereum/go-ethereum/contracts/native/governance/node_manager"
-	"github.com/ethereum/go-ethereum/contracts/native/governance/relayer_manager"
+	"github.com/devfans/zion/contracts/native/cross_chain_manager"
+	"github.com/devfans/zion/contracts/native/governance"
+	"github.com/devfans/zion/contracts/native/governance/neo3_state_manager"
+	"github.com/devfans/zion/contracts/native/governance/node_manager"
+	"github.com/devfans/zion/contracts/native/governance/relayer_manager"
 
-	"github.com/ethereum/go-ethereum/crypto"
+	"github.com/devfans/zion/crypto"
 	cstates "github.com/polynetwork/poly/core/states"
 )
 

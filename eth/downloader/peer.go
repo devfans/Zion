@@ -28,10 +28,10 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/eth/protocols/eth"
-	"github.com/ethereum/go-ethereum/event"
-	"github.com/ethereum/go-ethereum/log"
+	"github.com/devfans/zion/common"
+	"github.com/devfans/zion/eth/protocols/eth"
+	"github.com/devfans/zion/event"
+	"github.com/devfans/zion/log"
 )
 
 const (

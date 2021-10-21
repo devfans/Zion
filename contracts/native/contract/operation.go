@@ -20,8 +20,8 @@ package contract
 import (
 	"fmt"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/contracts/native"
+	"github.com/devfans/zion/common"
+	"github.com/devfans/zion/contracts/native"
 )
 
 func ValidateOwner(n *native.NativeContract, address common.Address) error {

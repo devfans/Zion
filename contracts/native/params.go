@@ -18,8 +18,8 @@
 package native
 
 import (
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/contracts/native/utils"
+	"github.com/devfans/zion/common"
+	"github.com/devfans/zion/contracts/native/utils"
 )
 
 // FailedTxGasUsage tx's gas usage should not be greater than an minimum fixed value if it execute failed.

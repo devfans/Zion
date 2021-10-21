@@ -17,8 +17,8 @@
 package validator
 
 import (
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/consensus/hotstuff"
+	"github.com/devfans/zion/common"
+	"github.com/devfans/zion/consensus/hotstuff"
 )
 
 func New(addr common.Address) hotstuff.Validator {

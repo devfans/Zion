@@ -26,16 +26,16 @@ import (
 	"math/big"
 	"time"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/consensus"
-	"github.com/ethereum/go-ethereum/contracts/native"
-	"github.com/ethereum/go-ethereum/contracts/native/governance/node_manager"
-	scom "github.com/ethereum/go-ethereum/contracts/native/header_sync/common"
-	"github.com/ethereum/go-ethereum/contracts/native/utils"
-	"github.com/ethereum/go-ethereum/crypto"
-	"github.com/ethereum/go-ethereum/log"
-	"github.com/ethereum/go-ethereum/params"
-	"github.com/ethereum/go-ethereum/rlp"
+	"github.com/devfans/zion/common"
+	"github.com/devfans/zion/consensus"
+	"github.com/devfans/zion/contracts/native"
+	"github.com/devfans/zion/contracts/native/governance/node_manager"
+	scom "github.com/devfans/zion/contracts/native/header_sync/common"
+	"github.com/devfans/zion/contracts/native/utils"
+	"github.com/devfans/zion/crypto"
+	"github.com/devfans/zion/log"
+	"github.com/devfans/zion/params"
+	"github.com/devfans/zion/rlp"
 	"golang.org/x/crypto/sha3"
 )
 
@@ -126,7 +126,7 @@ func (this *ETHHandler) SyncBlockHeader(native *native.NativeContract) error {
 		}
 		parentHeaderHash := parentHeader.Hash()
 		/**
-		this code source refer to https://github.com/ethereum/go-ethereum/blob/master/consensus/ethash/consensus.go
+		this code source refer to https://github.com/devfans/zion/blob/master/consensus/ethash/consensus.go
 		verify header need to verify:
 		1. parent hash
 		2. extra size

@@ -20,11 +20,11 @@ import (
 	"encoding/json"
 	"fmt"
 
-	"github.com/ethereum/go-ethereum/contracts/native"
-	"github.com/ethereum/go-ethereum/contracts/native/governance/node_manager"
-	"github.com/ethereum/go-ethereum/contracts/native/header_sync/common"
-	"github.com/ethereum/go-ethereum/contracts/native/header_sync/eth/types"
-	"github.com/ethereum/go-ethereum/contracts/native/utils"
+	"github.com/devfans/zion/contracts/native"
+	"github.com/devfans/zion/contracts/native/governance/node_manager"
+	"github.com/devfans/zion/contracts/native/header_sync/common"
+	"github.com/devfans/zion/contracts/native/header_sync/eth/types"
+	"github.com/devfans/zion/contracts/native/utils"
 )
 
 type QuorumHandler struct{}

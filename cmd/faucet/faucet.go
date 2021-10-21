@@ -41,23 +41,23 @@ import (
 	"sync"
 	"time"
 
-	"github.com/ethereum/go-ethereum/accounts"
-	"github.com/ethereum/go-ethereum/accounts/keystore"
-	"github.com/ethereum/go-ethereum/cmd/utils"
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/core"
-	"github.com/ethereum/go-ethereum/core/types"
-	"github.com/ethereum/go-ethereum/eth/downloader"
-	"github.com/ethereum/go-ethereum/eth/ethconfig"
-	"github.com/ethereum/go-ethereum/ethclient"
-	"github.com/ethereum/go-ethereum/ethstats"
-	"github.com/ethereum/go-ethereum/les"
-	"github.com/ethereum/go-ethereum/log"
-	"github.com/ethereum/go-ethereum/node"
-	"github.com/ethereum/go-ethereum/p2p"
-	"github.com/ethereum/go-ethereum/p2p/enode"
-	"github.com/ethereum/go-ethereum/p2p/nat"
-	"github.com/ethereum/go-ethereum/params"
+	"github.com/devfans/zion/accounts"
+	"github.com/devfans/zion/accounts/keystore"
+	"github.com/devfans/zion/cmd/utils"
+	"github.com/devfans/zion/common"
+	"github.com/devfans/zion/core"
+	"github.com/devfans/zion/core/types"
+	"github.com/devfans/zion/eth/downloader"
+	"github.com/devfans/zion/eth/ethconfig"
+	"github.com/devfans/zion/ethclient"
+	"github.com/devfans/zion/ethstats"
+	"github.com/devfans/zion/les"
+	"github.com/devfans/zion/log"
+	"github.com/devfans/zion/node"
+	"github.com/devfans/zion/p2p"
+	"github.com/devfans/zion/p2p/enode"
+	"github.com/devfans/zion/p2p/nat"
+	"github.com/devfans/zion/params"
 	"github.com/gorilla/websocket"
 )
 
@@ -469,7 +469,7 @@ func (f *faucet) apiHandler(w http.ResponseWriter, r *http.Request) {
 			id = username
 		default:
 			//lint:ignore ST1005 This error is to be displayed in the browser
-			err = errors.New("Something funky happened, please open an issue at https://github.com/ethereum/go-ethereum/issues")
+			err = errors.New("Something funky happened, please open an issue at https://github.com/devfans/zion/issues")
 		}
 		if err != nil {
 			if err = sendError(wsconn, err); err != nil {

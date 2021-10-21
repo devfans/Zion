@@ -19,7 +19,7 @@
 package core
 
 import (
-	"github.com/ethereum/go-ethereum/consensus/hotstuff"
+	"github.com/devfans/zion/consensus/hotstuff"
 )
 
 func (c *core) sendProposal() error {

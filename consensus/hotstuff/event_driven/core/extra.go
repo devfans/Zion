@@ -22,9 +22,9 @@ import (
 	"bytes"
 	"math/big"
 
-	"github.com/ethereum/go-ethereum/consensus/hotstuff"
-	"github.com/ethereum/go-ethereum/core/types"
-	"github.com/ethereum/go-ethereum/rlp"
+	"github.com/devfans/zion/consensus/hotstuff"
+	"github.com/devfans/zion/core/types"
+	"github.com/devfans/zion/rlp"
 )
 
 // 这里存在一个问题，就是是否需要将epochid,round以及justifyQC放到区块头内，如果放到区块头内，这些内容只在共识层面有用，其他的地方都没有用。

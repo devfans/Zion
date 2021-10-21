@@ -23,14 +23,14 @@ import (
 	"github.com/Zilliqa/gozilliqa-sdk/core"
 	"github.com/Zilliqa/gozilliqa-sdk/mpt"
 	"github.com/Zilliqa/gozilliqa-sdk/util"
-	"github.com/ethereum/go-ethereum/contracts/native/header_sync/zilliqa"
-	"github.com/ethereum/go-ethereum/crypto"
+	"github.com/devfans/zion/contracts/native/header_sync/zilliqa"
+	"github.com/devfans/zion/crypto"
 	"strings"
 
-	"github.com/ethereum/go-ethereum/contracts/native"
-	scom "github.com/ethereum/go-ethereum/contracts/native/cross_chain_manager/common"
-	"github.com/ethereum/go-ethereum/contracts/native/governance/side_chain_manager"
-	"github.com/ethereum/go-ethereum/contracts/native/utils"
+	"github.com/devfans/zion/contracts/native"
+	scom "github.com/devfans/zion/contracts/native/cross_chain_manager/common"
+	"github.com/devfans/zion/contracts/native/governance/side_chain_manager"
+	"github.com/devfans/zion/contracts/native/utils"
 	"github.com/polynetwork/poly/common"
 )
 

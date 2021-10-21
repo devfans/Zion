@@ -1,4 +1,4 @@
-module github.com/ethereum/go-ethereum
+module github.com/devfans/zion
 
 go 1.16
 

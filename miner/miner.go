@@ -19,20 +19,20 @@ package miner
 
 import (
 	"fmt"
-	"github.com/ethereum/go-ethereum/consensus/hotstuff"
+	"github.com/devfans/zion/consensus/hotstuff"
 	"math/big"
 	"time"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/common/hexutil"
-	"github.com/ethereum/go-ethereum/consensus"
-	"github.com/ethereum/go-ethereum/core"
-	"github.com/ethereum/go-ethereum/core/state"
-	"github.com/ethereum/go-ethereum/core/types"
-	"github.com/ethereum/go-ethereum/eth/downloader"
-	"github.com/ethereum/go-ethereum/event"
-	"github.com/ethereum/go-ethereum/log"
-	"github.com/ethereum/go-ethereum/params"
+	"github.com/devfans/zion/common"
+	"github.com/devfans/zion/common/hexutil"
+	"github.com/devfans/zion/consensus"
+	"github.com/devfans/zion/core"
+	"github.com/devfans/zion/core/state"
+	"github.com/devfans/zion/core/types"
+	"github.com/devfans/zion/eth/downloader"
+	"github.com/devfans/zion/event"
+	"github.com/devfans/zion/log"
+	"github.com/devfans/zion/params"
 )
 
 // Backend wraps all methods required for mining.

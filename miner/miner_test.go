@@ -21,17 +21,17 @@ import (
 	"testing"
 	"time"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/consensus/clique"
-	"github.com/ethereum/go-ethereum/core"
-	"github.com/ethereum/go-ethereum/core/rawdb"
-	"github.com/ethereum/go-ethereum/core/state"
-	"github.com/ethereum/go-ethereum/core/types"
-	"github.com/ethereum/go-ethereum/core/vm"
-	"github.com/ethereum/go-ethereum/eth/downloader"
-	"github.com/ethereum/go-ethereum/ethdb/memorydb"
-	"github.com/ethereum/go-ethereum/event"
-	"github.com/ethereum/go-ethereum/trie"
+	"github.com/devfans/zion/common"
+	"github.com/devfans/zion/consensus/clique"
+	"github.com/devfans/zion/core"
+	"github.com/devfans/zion/core/rawdb"
+	"github.com/devfans/zion/core/state"
+	"github.com/devfans/zion/core/types"
+	"github.com/devfans/zion/core/vm"
+	"github.com/devfans/zion/eth/downloader"
+	"github.com/devfans/zion/ethdb/memorydb"
+	"github.com/devfans/zion/event"
+	"github.com/devfans/zion/trie"
 )
 
 type mockBackend struct {

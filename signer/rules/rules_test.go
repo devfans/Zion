@@ -22,13 +22,13 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/ethereum/go-ethereum/accounts"
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/common/hexutil"
-	"github.com/ethereum/go-ethereum/core/types"
-	"github.com/ethereum/go-ethereum/internal/ethapi"
-	"github.com/ethereum/go-ethereum/signer/core"
-	"github.com/ethereum/go-ethereum/signer/storage"
+	"github.com/devfans/zion/accounts"
+	"github.com/devfans/zion/common"
+	"github.com/devfans/zion/common/hexutil"
+	"github.com/devfans/zion/core/types"
+	"github.com/devfans/zion/internal/ethapi"
+	"github.com/devfans/zion/signer/core"
+	"github.com/devfans/zion/signer/storage"
 )
 
 const JS = `

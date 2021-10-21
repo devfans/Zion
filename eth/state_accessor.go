@@ -21,13 +21,13 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/core"
-	"github.com/ethereum/go-ethereum/core/state"
-	"github.com/ethereum/go-ethereum/core/types"
-	"github.com/ethereum/go-ethereum/core/vm"
-	"github.com/ethereum/go-ethereum/log"
-	"github.com/ethereum/go-ethereum/trie"
+	"github.com/devfans/zion/common"
+	"github.com/devfans/zion/core"
+	"github.com/devfans/zion/core/state"
+	"github.com/devfans/zion/core/types"
+	"github.com/devfans/zion/core/vm"
+	"github.com/devfans/zion/log"
+	"github.com/devfans/zion/trie"
 )
 
 // stateAtBlock retrieves the state database associated with a certain block.

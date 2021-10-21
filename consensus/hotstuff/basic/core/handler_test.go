@@ -19,7 +19,7 @@ package core
 import (
 	"testing"
 
-	"github.com/ethereum/go-ethereum/consensus/hotstuff"
+	"github.com/devfans/zion/consensus/hotstuff"
 	"github.com/stretchr/testify/assert"
 )
 

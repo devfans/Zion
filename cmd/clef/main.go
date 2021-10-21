@@ -35,24 +35,24 @@ import (
 	"strings"
 	"time"
 
-	"github.com/ethereum/go-ethereum/accounts"
-	"github.com/ethereum/go-ethereum/accounts/keystore"
-	"github.com/ethereum/go-ethereum/cmd/utils"
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/common/hexutil"
-	"github.com/ethereum/go-ethereum/core/types"
-	"github.com/ethereum/go-ethereum/crypto"
-	"github.com/ethereum/go-ethereum/internal/ethapi"
-	"github.com/ethereum/go-ethereum/internal/flags"
-	"github.com/ethereum/go-ethereum/log"
-	"github.com/ethereum/go-ethereum/node"
-	"github.com/ethereum/go-ethereum/params"
-	"github.com/ethereum/go-ethereum/rlp"
-	"github.com/ethereum/go-ethereum/rpc"
-	"github.com/ethereum/go-ethereum/signer/core"
-	"github.com/ethereum/go-ethereum/signer/fourbyte"
-	"github.com/ethereum/go-ethereum/signer/rules"
-	"github.com/ethereum/go-ethereum/signer/storage"
+	"github.com/devfans/zion/accounts"
+	"github.com/devfans/zion/accounts/keystore"
+	"github.com/devfans/zion/cmd/utils"
+	"github.com/devfans/zion/common"
+	"github.com/devfans/zion/common/hexutil"
+	"github.com/devfans/zion/core/types"
+	"github.com/devfans/zion/crypto"
+	"github.com/devfans/zion/internal/ethapi"
+	"github.com/devfans/zion/internal/flags"
+	"github.com/devfans/zion/log"
+	"github.com/devfans/zion/node"
+	"github.com/devfans/zion/params"
+	"github.com/devfans/zion/rlp"
+	"github.com/devfans/zion/rpc"
+	"github.com/devfans/zion/signer/core"
+	"github.com/devfans/zion/signer/fourbyte"
+	"github.com/devfans/zion/signer/rules"
+	"github.com/devfans/zion/signer/storage"
 
 	"github.com/mattn/go-colorable"
 	"github.com/mattn/go-isatty"
@@ -795,7 +795,7 @@ func checkFile(filename string) error {
 	}
 	// Check the unix permission bits
 	// However, on windows, we cannot use the unix perm-bits, see
-	// https://github.com/ethereum/go-ethereum/issues/20123
+	// https://github.com/devfans/zion/issues/20123
 	if runtime.GOOS != "windows" && info.Mode().Perm()&0377 != 0 {
 		return fmt.Errorf("file (%v) has insecure file permissions (%v)", filename, info.Mode().String())
 	}

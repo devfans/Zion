@@ -20,8 +20,8 @@ package native
 import (
 	"math/big"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/core/state"
+	"github.com/devfans/zion/common"
+	"github.com/devfans/zion/core/state"
 )
 
 // support native functions to evm functions.

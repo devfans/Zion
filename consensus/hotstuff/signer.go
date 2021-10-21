@@ -1,8 +1,8 @@
 package hotstuff
 
 import (
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/core/types"
+	"github.com/devfans/zion/common"
+	"github.com/devfans/zion/core/types"
 )
 
 type Signer interface {

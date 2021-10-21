@@ -22,13 +22,13 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/core/rawdb"
-	"github.com/ethereum/go-ethereum/core/types"
-	"github.com/ethereum/go-ethereum/eth/downloader"
-	"github.com/ethereum/go-ethereum/eth/protocols/eth"
-	"github.com/ethereum/go-ethereum/log"
-	"github.com/ethereum/go-ethereum/p2p/enode"
+	"github.com/devfans/zion/common"
+	"github.com/devfans/zion/core/rawdb"
+	"github.com/devfans/zion/core/types"
+	"github.com/devfans/zion/eth/downloader"
+	"github.com/devfans/zion/eth/protocols/eth"
+	"github.com/devfans/zion/log"
+	"github.com/devfans/zion/p2p/enode"
 )
 
 const (

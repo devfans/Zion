@@ -21,17 +21,17 @@ import (
 	"math/big"
 	"time"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/consensus"
-	"github.com/ethereum/go-ethereum/core"
-	"github.com/ethereum/go-ethereum/core/types"
-	"github.com/ethereum/go-ethereum/crypto"
-	"github.com/ethereum/go-ethereum/metrics"
-	"github.com/ethereum/go-ethereum/p2p"
-	"github.com/ethereum/go-ethereum/p2p/enode"
-	"github.com/ethereum/go-ethereum/p2p/enr"
-	"github.com/ethereum/go-ethereum/params"
-	"github.com/ethereum/go-ethereum/trie"
+	"github.com/devfans/zion/common"
+	"github.com/devfans/zion/consensus"
+	"github.com/devfans/zion/core"
+	"github.com/devfans/zion/core/types"
+	"github.com/devfans/zion/crypto"
+	"github.com/devfans/zion/metrics"
+	"github.com/devfans/zion/p2p"
+	"github.com/devfans/zion/p2p/enode"
+	"github.com/devfans/zion/p2p/enr"
+	"github.com/devfans/zion/params"
+	"github.com/devfans/zion/trie"
 )
 
 const (

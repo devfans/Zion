@@ -22,13 +22,13 @@ import (
 	"math/rand"
 	"time"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/common/prque"
-	"github.com/ethereum/go-ethereum/consensus"
-	"github.com/ethereum/go-ethereum/core/types"
-	"github.com/ethereum/go-ethereum/log"
-	"github.com/ethereum/go-ethereum/metrics"
-	"github.com/ethereum/go-ethereum/trie"
+	"github.com/devfans/zion/common"
+	"github.com/devfans/zion/common/prque"
+	"github.com/devfans/zion/consensus"
+	"github.com/devfans/zion/core/types"
+	"github.com/devfans/zion/log"
+	"github.com/devfans/zion/metrics"
+	"github.com/devfans/zion/trie"
 )
 
 const (

@@ -24,8 +24,8 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/consensus/hotstuff"
+	"github.com/devfans/zion/common"
+	"github.com/devfans/zion/consensus/hotstuff"
 )
 
 // Construct a new message set to accumulate messages for given height/view number.

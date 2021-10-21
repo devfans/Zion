@@ -21,10 +21,10 @@ package core
 import (
 	"math/big"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/consensus/hotstuff"
-	"github.com/ethereum/go-ethereum/contracts/native/utils"
-	"github.com/ethereum/go-ethereum/rlp"
+	"github.com/devfans/zion/common"
+	"github.com/devfans/zion/consensus/hotstuff"
+	"github.com/devfans/zion/contracts/native/utils"
+	"github.com/devfans/zion/rlp"
 )
 
 func Encode(val interface{}) ([]byte, error) {

@@ -24,10 +24,10 @@ import (
 
 	"github.com/polynetwork/poly/common"
 
-	"github.com/ethereum/go-ethereum/contracts/native"
+	"github.com/devfans/zion/contracts/native"
 
-	scom "github.com/ethereum/go-ethereum/contracts/native/header_sync/common"
-	"github.com/ethereum/go-ethereum/contracts/native/header_sync/zilliqa"
+	scom "github.com/devfans/zion/contracts/native/header_sync/common"
+	"github.com/devfans/zion/contracts/native/header_sync/zilliqa"
 
 	"testing"
 

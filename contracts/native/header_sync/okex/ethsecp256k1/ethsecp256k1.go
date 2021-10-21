@@ -20,8 +20,8 @@ import (
 	"bytes"
 	"crypto/ecdsa"
 
-	ethcrypto "github.com/ethereum/go-ethereum/crypto"
-	"github.com/ethereum/go-ethereum/crypto/secp256k1"
+	ethcrypto "github.com/devfans/zion/crypto"
+	"github.com/devfans/zion/crypto/secp256k1"
 
 	tmcrypto "github.com/tendermint/tendermint/crypto"
 )

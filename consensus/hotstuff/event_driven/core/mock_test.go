@@ -22,11 +22,11 @@ import (
 	"testing"
 	"time"
 
-	"github.com/ethereum/go-ethereum/consensus/hotstuff"
-	"github.com/ethereum/go-ethereum/core/types"
+	"github.com/devfans/zion/consensus/hotstuff"
+	"github.com/devfans/zion/core/types"
 )
 
-// go test -v github.com/ethereum/go-ethereum/consensus/hotstuff/event-driven/core -run TestNewRound
+// go test -v github.com/devfans/zion/consensus/hotstuff/event-driven/core -run TestNewRound
 func TestNewRound(t *testing.T) {
 	N := uint64(1)
 	F := uint64(1)

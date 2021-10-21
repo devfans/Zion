@@ -45,12 +45,12 @@ import (
 	"strings"
 	"text/tabwriter"
 
-	"github.com/ethereum/go-ethereum/crypto"
-	"github.com/ethereum/go-ethereum/p2p"
-	"github.com/ethereum/go-ethereum/p2p/enode"
-	"github.com/ethereum/go-ethereum/p2p/simulations"
-	"github.com/ethereum/go-ethereum/p2p/simulations/adapters"
-	"github.com/ethereum/go-ethereum/rpc"
+	"github.com/devfans/zion/crypto"
+	"github.com/devfans/zion/p2p"
+	"github.com/devfans/zion/p2p/enode"
+	"github.com/devfans/zion/p2p/simulations"
+	"github.com/devfans/zion/p2p/simulations/adapters"
+	"github.com/devfans/zion/rpc"
 	"gopkg.in/urfave/cli.v1"
 )
 

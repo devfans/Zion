@@ -22,10 +22,10 @@ import (
 	"testing"
 	"time"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/consensus/hotstuff"
-	"github.com/ethereum/go-ethereum/core/types"
-	elog "github.com/ethereum/go-ethereum/log"
+	"github.com/devfans/zion/common"
+	"github.com/devfans/zion/consensus/hotstuff"
+	"github.com/devfans/zion/core/types"
+	elog "github.com/devfans/zion/log"
 )
 
 func makeBlock(number int64) *types.Block {

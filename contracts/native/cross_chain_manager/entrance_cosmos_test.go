@@ -19,10 +19,10 @@ package cross_chain_manager
 import (
 	"fmt"
 
-	"github.com/ethereum/go-ethereum/accounts/abi"
-	ccmcom "github.com/ethereum/go-ethereum/contracts/native/cross_chain_manager/common"
+	"github.com/devfans/zion/accounts/abi"
+	ccmcom "github.com/devfans/zion/contracts/native/cross_chain_manager/common"
 
-	synccom "github.com/ethereum/go-ethereum/contracts/native/header_sync/cosmos"
+	synccom "github.com/devfans/zion/contracts/native/header_sync/cosmos"
 
 	"crypto/ecdsa"
 	"encoding/hex"
@@ -30,38 +30,38 @@ import (
 	"math/big"
 	"reflect"
 
-	ethcommon "github.com/ethereum/go-ethereum/common"
+	ethcommon "github.com/devfans/zion/common"
 
 	"github.com/polynetwork/poly/common"
 
-	"github.com/ethereum/go-ethereum/contracts/native"
+	"github.com/devfans/zion/contracts/native"
 
-	scom "github.com/ethereum/go-ethereum/contracts/native/header_sync/common"
-	// scomcc "github.com/ethereum/go-ethereum/contracts/native/cross_chain_manager/common"
+	scom "github.com/devfans/zion/contracts/native/header_sync/common"
+	// scomcc "github.com/devfans/zion/contracts/native/cross_chain_manager/common"
 
-	"github.com/ethereum/go-ethereum/contracts/native/header_sync/zilliqa"
+	"github.com/devfans/zion/contracts/native/header_sync/zilliqa"
 
-	cosmoscc "github.com/ethereum/go-ethereum/contracts/native/cross_chain_manager/cosmos"
+	cosmoscc "github.com/devfans/zion/contracts/native/cross_chain_manager/cosmos"
 
-	"github.com/ethereum/go-ethereum/contracts/native/utils"
+	"github.com/devfans/zion/contracts/native/utils"
 
-	"github.com/ethereum/go-ethereum/contracts/native/governance/side_chain_manager"
+	"github.com/devfans/zion/contracts/native/governance/side_chain_manager"
 
-	"github.com/ethereum/go-ethereum/core/rawdb"
-	"github.com/ethereum/go-ethereum/core/state"
+	"github.com/devfans/zion/core/rawdb"
+	"github.com/devfans/zion/core/state"
 
 	"strings"
 	"testing"
 
 	"github.com/stretchr/testify/assert"
 
-	"github.com/ethereum/go-ethereum/contracts/native/governance"
-	"github.com/ethereum/go-ethereum/contracts/native/governance/neo3_state_manager"
-	"github.com/ethereum/go-ethereum/contracts/native/governance/node_manager"
-	"github.com/ethereum/go-ethereum/contracts/native/governance/relayer_manager"
-	"github.com/ethereum/go-ethereum/contracts/native/header_sync"
+	"github.com/devfans/zion/contracts/native/governance"
+	"github.com/devfans/zion/contracts/native/governance/neo3_state_manager"
+	"github.com/devfans/zion/contracts/native/governance/node_manager"
+	"github.com/devfans/zion/contracts/native/governance/relayer_manager"
+	"github.com/devfans/zion/contracts/native/header_sync"
 
-	"github.com/ethereum/go-ethereum/crypto"
+	"github.com/devfans/zion/crypto"
 	cstates "github.com/polynetwork/poly/core/states"
 )
 

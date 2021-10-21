@@ -25,7 +25,7 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/ethereum/go-ethereum/common"
+	"github.com/devfans/zion/common"
 )
 
 // Validator represets Volatile state for each Validator

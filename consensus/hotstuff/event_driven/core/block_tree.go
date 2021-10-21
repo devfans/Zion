@@ -22,9 +22,9 @@ import (
 	"bytes"
 	"fmt"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/common/prque"
-	"github.com/ethereum/go-ethereum/core/types"
+	"github.com/devfans/zion/common"
+	"github.com/devfans/zion/common/prque"
+	"github.com/devfans/zion/core/types"
 )
 
 //Node save one block and its children

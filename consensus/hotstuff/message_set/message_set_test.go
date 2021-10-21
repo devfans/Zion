@@ -25,11 +25,11 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/consensus/hotstuff"
-	"github.com/ethereum/go-ethereum/consensus/hotstuff/basic/core"
-	"github.com/ethereum/go-ethereum/consensus/hotstuff/validator"
-	"github.com/ethereum/go-ethereum/crypto"
+	"github.com/devfans/zion/common"
+	"github.com/devfans/zion/consensus/hotstuff"
+	"github.com/devfans/zion/consensus/hotstuff/basic/core"
+	"github.com/devfans/zion/consensus/hotstuff/validator"
+	"github.com/devfans/zion/crypto"
 )
 
 type Keys []*ecdsa.PrivateKey

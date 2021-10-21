@@ -26,17 +26,17 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/ethereum/go-ethereum/accounts"
-	"github.com/ethereum/go-ethereum/accounts/external"
-	"github.com/ethereum/go-ethereum/accounts/keystore"
-	"github.com/ethereum/go-ethereum/accounts/scwallet"
-	"github.com/ethereum/go-ethereum/accounts/usbwallet"
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/crypto"
-	"github.com/ethereum/go-ethereum/log"
-	"github.com/ethereum/go-ethereum/p2p"
-	"github.com/ethereum/go-ethereum/p2p/enode"
-	"github.com/ethereum/go-ethereum/rpc"
+	"github.com/devfans/zion/accounts"
+	"github.com/devfans/zion/accounts/external"
+	"github.com/devfans/zion/accounts/keystore"
+	"github.com/devfans/zion/accounts/scwallet"
+	"github.com/devfans/zion/accounts/usbwallet"
+	"github.com/devfans/zion/common"
+	"github.com/devfans/zion/crypto"
+	"github.com/devfans/zion/log"
+	"github.com/devfans/zion/p2p"
+	"github.com/devfans/zion/p2p/enode"
+	"github.com/devfans/zion/rpc"
 )
 
 const (

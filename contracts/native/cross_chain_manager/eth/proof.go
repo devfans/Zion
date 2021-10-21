@@ -24,8 +24,8 @@ import (
 	"strconv"
 	"strings"
 
-	ethcomm "github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/crypto"
+	ethcomm "github.com/devfans/zion/common"
+	"github.com/devfans/zion/crypto"
 )
 
 type Proof struct {

@@ -19,12 +19,12 @@ package ethtest
 import (
 	"time"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/core/types"
-	"github.com/ethereum/go-ethereum/crypto"
-	"github.com/ethereum/go-ethereum/eth/protocols/eth"
-	"github.com/ethereum/go-ethereum/internal/utesting"
-	"github.com/ethereum/go-ethereum/p2p"
+	"github.com/devfans/zion/common"
+	"github.com/devfans/zion/core/types"
+	"github.com/devfans/zion/crypto"
+	"github.com/devfans/zion/eth/protocols/eth"
+	"github.com/devfans/zion/internal/utesting"
+	"github.com/devfans/zion/p2p"
 )
 
 // Is_66 checks if the node supports the eth66 protocol version,

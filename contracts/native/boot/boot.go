@@ -18,13 +18,13 @@
 package boot
 
 import (
-	"github.com/ethereum/go-ethereum/contracts/native/cross_chain_manager"
-	"github.com/ethereum/go-ethereum/contracts/native/governance"
-	"github.com/ethereum/go-ethereum/contracts/native/governance/neo3_state_manager"
-	"github.com/ethereum/go-ethereum/contracts/native/governance/node_manager"
-	"github.com/ethereum/go-ethereum/contracts/native/governance/relayer_manager"
-	"github.com/ethereum/go-ethereum/contracts/native/governance/side_chain_manager"
-	"github.com/ethereum/go-ethereum/contracts/native/header_sync"
+	"github.com/devfans/zion/contracts/native/cross_chain_manager"
+	"github.com/devfans/zion/contracts/native/governance"
+	"github.com/devfans/zion/contracts/native/governance/neo3_state_manager"
+	"github.com/devfans/zion/contracts/native/governance/node_manager"
+	"github.com/devfans/zion/contracts/native/governance/relayer_manager"
+	"github.com/devfans/zion/contracts/native/governance/side_chain_manager"
+	"github.com/devfans/zion/contracts/native/header_sync"
 )
 
 func InitialNativeContracts() {

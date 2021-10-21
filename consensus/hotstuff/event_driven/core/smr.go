@@ -21,8 +21,8 @@ package core
 import (
 	"math/big"
 
-	"github.com/ethereum/go-ethereum/consensus/hotstuff"
-	"github.com/ethereum/go-ethereum/core/types"
+	"github.com/devfans/zion/consensus/hotstuff"
+	"github.com/devfans/zion/core/types"
 )
 
 // SMR state machine repo

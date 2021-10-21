@@ -25,15 +25,15 @@ import (
 	"time"
 	"unsafe"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/contracts/native"
-	scom "github.com/ethereum/go-ethereum/contracts/native/header_sync/common"
-	"github.com/ethereum/go-ethereum/contracts/native/utils"
+	"github.com/devfans/zion/common"
+	"github.com/devfans/zion/contracts/native"
+	scom "github.com/devfans/zion/contracts/native/header_sync/common"
+	"github.com/devfans/zion/contracts/native/utils"
 	cstates "github.com/polynetwork/poly/core/states"
 )
 
 const (
-	// source from https://github.com/ethereum/go-ethereum/blob/master/consensus/ethash/consensus.go#L45
+	// source from https://github.com/devfans/zion/blob/master/consensus/ethash/consensus.go#L45
 	allowedFutureBlockTime = 15 * time.Second // Max time from current time allowed for blocks, before they're considered future blocks
 	epochLength            = 30000
 	maxEpoch               = 2048

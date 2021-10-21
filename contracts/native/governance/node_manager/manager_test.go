@@ -25,12 +25,12 @@ import (
 	"sort"
 	"testing"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/common/hexutil"
-	"github.com/ethereum/go-ethereum/contracts/native"
-	"github.com/ethereum/go-ethereum/core/rawdb"
-	"github.com/ethereum/go-ethereum/core/state"
-	"github.com/ethereum/go-ethereum/crypto"
+	"github.com/devfans/zion/common"
+	"github.com/devfans/zion/common/hexutil"
+	"github.com/devfans/zion/contracts/native"
+	"github.com/devfans/zion/core/rawdb"
+	"github.com/devfans/zion/core/state"
+	"github.com/devfans/zion/crypto"
 	"github.com/stretchr/testify/assert"
 )
 
@@ -55,7 +55,7 @@ func TestMain(m *testing.M) {
 	os.Exit(m.Run())
 }
 
-// go test -v -count=1 github.com/ethereum/go-ethereum/contracts/native/governance/node_manager -run TestPropose
+// go test -v -count=1 github.com/devfans/zion/contracts/native/governance/node_manager -run TestPropose
 func TestPropose(t *testing.T) {
 	type TestCase struct {
 		BlockNum      int
@@ -264,7 +264,7 @@ func TestPropose(t *testing.T) {
 	}
 }
 
-// go test -v -count=1 github.com/ethereum/go-ethereum/contracts/native/governance/node_manager -run TestVote
+// go test -v -count=1 github.com/devfans/zion/contracts/native/governance/node_manager -run TestVote
 func TestVote(t *testing.T) {
 	epochID := uint64(2)
 

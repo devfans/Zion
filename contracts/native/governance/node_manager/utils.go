@@ -21,10 +21,10 @@ package node_manager
 import (
 	"fmt"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/common/hexutil"
-	"github.com/ethereum/go-ethereum/contracts/native"
-	"github.com/ethereum/go-ethereum/crypto"
+	"github.com/devfans/zion/common"
+	"github.com/devfans/zion/common/hexutil"
+	"github.com/devfans/zion/contracts/native"
+	"github.com/devfans/zion/crypto"
 )
 
 func getCurrentEpoch(s *native.NativeContract) (*EpochInfo, error) {

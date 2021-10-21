@@ -26,15 +26,15 @@ import (
 	"testing"
 	"time"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/consensus/ethash"
-	"github.com/ethereum/go-ethereum/console/prompt"
-	"github.com/ethereum/go-ethereum/core"
-	"github.com/ethereum/go-ethereum/eth"
-	"github.com/ethereum/go-ethereum/eth/ethconfig"
-	"github.com/ethereum/go-ethereum/internal/jsre"
-	"github.com/ethereum/go-ethereum/miner"
-	"github.com/ethereum/go-ethereum/node"
+	"github.com/devfans/zion/common"
+	"github.com/devfans/zion/consensus/ethash"
+	"github.com/devfans/zion/console/prompt"
+	"github.com/devfans/zion/core"
+	"github.com/devfans/zion/eth"
+	"github.com/devfans/zion/eth/ethconfig"
+	"github.com/devfans/zion/internal/jsre"
+	"github.com/devfans/zion/miner"
+	"github.com/devfans/zion/node"
 )
 
 const (

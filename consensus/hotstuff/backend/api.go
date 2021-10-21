@@ -17,8 +17,8 @@
 package backend
 
 import (
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/consensus"
+	"github.com/devfans/zion/common"
+	"github.com/devfans/zion/consensus"
 )
 
 // API is a user facing RPC API to allow controlling the address and voting

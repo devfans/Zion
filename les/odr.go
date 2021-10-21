@@ -21,10 +21,10 @@ import (
 	"sort"
 	"time"
 
-	"github.com/ethereum/go-ethereum/common/mclock"
-	"github.com/ethereum/go-ethereum/core"
-	"github.com/ethereum/go-ethereum/ethdb"
-	"github.com/ethereum/go-ethereum/light"
+	"github.com/devfans/zion/common/mclock"
+	"github.com/devfans/zion/core"
+	"github.com/devfans/zion/ethdb"
+	"github.com/devfans/zion/light"
 )
 
 // LesOdr implements light.OdrBackend

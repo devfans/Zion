@@ -23,11 +23,11 @@ import (
 	"fmt"
 	"github.com/polynetwork/poly/common"
 
-	"github.com/ethereum/go-ethereum/contracts/native"
+	"github.com/devfans/zion/contracts/native"
 	cstates "github.com/polynetwork/poly/core/states"
 
-	hscommon "github.com/ethereum/go-ethereum/contracts/native/header_sync/common"
-	"github.com/ethereum/go-ethereum/contracts/native/utils"
+	hscommon "github.com/devfans/zion/contracts/native/header_sync/common"
+	"github.com/devfans/zion/contracts/native/utils"
 	"github.com/tendermint/tendermint/types"
 )
 

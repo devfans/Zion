@@ -18,9 +18,9 @@
 package utils
 
 import (
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/core/state"
-	"github.com/ethereum/go-ethereum/core/types"
+	"github.com/devfans/zion/common"
+	"github.com/devfans/zion/core/state"
+	"github.com/devfans/zion/core/types"
 )
 
 type EventEmitter struct {

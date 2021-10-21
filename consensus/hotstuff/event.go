@@ -16,7 +16,7 @@
 
 package hotstuff
 
-import "github.com/ethereum/go-ethereum/core/types"
+import "github.com/devfans/zion/core/types"
 
 // RequestEvent is posted to propose a proposal (posting the incoming block to
 // the main hotstuff engine anyway regardless of being the speaker or delegators)

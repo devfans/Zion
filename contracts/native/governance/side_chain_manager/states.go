@@ -21,7 +21,7 @@ import (
 	"fmt"
 	"sort"
 
-	ethcomm "github.com/ethereum/go-ethereum/common"
+	ethcomm "github.com/devfans/zion/common"
 	"github.com/polynetwork/poly/common"
 )
 

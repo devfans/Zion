@@ -6,8 +6,8 @@ import (
 	"encoding/json"
 	"errors"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/common/hexutil"
+	"github.com/devfans/zion/common"
+	"github.com/devfans/zion/common/hexutil"
 )
 
 var _ = (*assembleBlockParamsMarshaling)(nil)

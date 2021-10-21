@@ -21,9 +21,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/ethereum/go-ethereum/consensus/hotstuff"
-	"github.com/ethereum/go-ethereum/event"
-	"github.com/ethereum/go-ethereum/log"
+	"github.com/devfans/zion/consensus/hotstuff"
+	"github.com/devfans/zion/event"
+	"github.com/devfans/zion/log"
 	"github.com/stretchr/testify/assert"
 )
 
