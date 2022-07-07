@@ -51,6 +51,7 @@ func IncreaseValidatorPeriod(s *native.NativeContract, validator *Validator) (ui
 
 	// calculate current ratio
 	// mul decimal
+	// REVIEW: err not checked here
 	ratio, err := validatorAccumulatedRewards.Rewards.DivWithTokenDecimal(validator.TotalStake)
 
 	// fetch snapshot rewards for last period
@@ -198,6 +199,7 @@ func initializeStake(s *native.NativeContract, stakeInfo *StakeInfo, dec []byte)
 	}
 	previousPeriod := validatorAccumulatedRewards.Period - 1
 
+	// REVIEW: previousPeriod still exist here after new validator was just created?
 	// increment reference count for the period we're going to track
 	err = increaseReferenceCount(s, dec, previousPeriod)
 	if err != nil {

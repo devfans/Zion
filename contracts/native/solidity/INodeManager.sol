@@ -1,9 +1,11 @@
 pragma solidity >=0.7.0 <0.9.0;
 
 interface INodeManager {
+    // REVIEW: May should be payable here?
     function createValidator(string calldata consensusPubkey, address proposalAddress, int commission, int initStake, string calldata desc) external returns(bool success);
     function updateValidator(string calldata consensusPubkey, address proposalAddress, string calldata desc) external returns(bool success);
     function updateCommission(string calldata consensusPubkey, int commission) external returns(bool success);
+    // REVIEW: May should be payable here?
     function stake(string calldata consensusPubkey, int amount) external returns(bool success);
     function unStake(string calldata consensusPubkey, int amount) external returns(bool success);
     function withdraw() external returns(bool success);

@@ -521,6 +521,7 @@ func CancelValidator(s *native.NativeContract) ([]byte, error) {
 			return nil, fmt.Errorf("CancelValidator, setValidator error: %v", err)
 		}
 	case validator.IsUnlocking(height), validator.IsUnlocked(height):
+		// REVIEW: Not saved here
 		validator.Status = Remove
 	default:
 		return nil, fmt.Errorf("CancelValidator, unsupported validator status")
@@ -542,6 +543,7 @@ func WithdrawValidator(s *native.NativeContract) ([]byte, error) {
 	caller := ctx.Caller
 	height := s.ContractRef().BlockHeight()
 
+	// REVIEW: wrong param namne here
 	params := &CancelValidatorParam{}
 	if err := utils.UnpackMethod(ABI, MethodWithdrawValidator, params, ctx.Payload); err != nil {
 		return nil, fmt.Errorf("WithdrawValidator, unpack params error: %v", err)
@@ -597,6 +599,7 @@ func WithdrawValidator(s *native.NativeContract) ([]byte, error) {
 	}
 	delAccumulatedCommission(s, dec)
 
+	// REVIEW: validator.SelfStake is always zero here
 	err = s.AddNotify(ABI, []string{WITHDRAW_VALIDATOR_EVENT}, params.ConsensusPubkey, validator.SelfStake.BigInt().String())
 	if err != nil {
 		return nil, fmt.Errorf("CancelValidator, AddNotify error: %v", err)
@@ -612,9 +615,11 @@ func ChangeEpoch(s *native.NativeContract) ([]byte, error) {
 	if err != nil {
 		return nil, fmt.Errorf("ChangeEpoch, GetCurrentEpochInfoImpl error: %v", err)
 	}
+	// REVIEW: err not checked here
 	globalConfig, err := getGlobalConfig(s)
 
 	// anyone can call this if height reaches
+	// REVIEW: why not only equal to blockPerEpoch here?
 	if new(big.Int).Sub(startHeight, currentEpochInfo.StartHeight).Cmp(globalConfig.BlockPerEpoch) == -1 {
 		return nil, fmt.Errorf("ChangeEpoch, block height does not reach, current epoch start at %s",
 			currentEpochInfo.StartHeight.String())
@@ -662,6 +667,7 @@ func ChangeEpoch(s *native.NativeContract) ([]byte, error) {
 			case validator.IsLocked():
 			case validator.IsUnlocking(endHeight), validator.IsUnlocked(endHeight):
 				validator.Status = Lock
+				// REIVEW: remove unlocking height here?
 			}
 
 			peer := &Peer{
@@ -846,6 +852,7 @@ func EndBlock(s *native.NativeContract) ([]byte, error) {
 				return nil, fmt.Errorf("EndBlock, allocateSum.Add error: %v", err)
 			}
 		}
+		// REIVEW: How could be a validator not found in storage here? Throw error here?
 	}
 
 	// update outstanding rewards
