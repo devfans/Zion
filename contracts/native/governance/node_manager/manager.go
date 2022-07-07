@@ -426,6 +426,7 @@ func UnStake(s *native.NativeContract) ([]byte, error) {
 		}
 	}
 	if validator.TotalStake.IsZero() && validator.SelfStake.IsZero() {
+		// REVIEW: what about others left oustanding reward?
 		err = delValidator(s, params.ConsensusPubkey)
 		if err != nil {
 			return nil, fmt.Errorf("UnStake, delValidator error: %v", err)
@@ -582,6 +583,7 @@ func WithdrawValidator(s *native.NativeContract) ([]byte, error) {
 		if err != nil {
 			return nil, fmt.Errorf("WithdrawValidator, delValidator error: %v", err)
 		}
+		// REVIEW: validator commission is removed here, but used after?
 		err = AfterValidatorRemoved(s, validator)
 		if err != nil {
 			return nil, fmt.Errorf("WithdrawValidator, AfterValidatorRemoved error: %v", err)
@@ -755,6 +757,7 @@ func WithdrawStakeRewards(s *native.NativeContract) ([]byte, error) {
 		return nil, fmt.Errorf("WithdrawStakeRewards, initializeStake error: %v", err)
 	}
 
+	// REVIEW: maybe include staker and validator in event?
 	err = s.AddNotify(ABI, []string{WITHDRAW_STAKE_REWARDS_EVENT}, rewards.BigInt().String())
 	if err != nil {
 		return nil, fmt.Errorf("WithdrawStakeRewards, AddNotify error: %v", err)
