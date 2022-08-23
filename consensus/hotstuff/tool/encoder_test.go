@@ -30,10 +30,10 @@ import (
 
 func TestGenesisExtra(t *testing.T) {
 	validators := []common.Address{
-		common.HexToAddress("0x258af48e28e4a6846e931ddff8e1cdf8579821e5"),
-		common.HexToAddress("0x6a708455c8777630aac9d1e7702d13f7a865b27c"),
-		common.HexToAddress("0x8c09d936a1b408d6e0afaa537ba4e06c4504a0ae"),
-		common.HexToAddress("0xad3bf5ed640cc72f37bd21d64a65c3c756e9c88c"),
+		common.HexToAddress("0x40FBBE484b8Ee6139Af08446950B088e10b2306A"),
+		common.HexToAddress("0x8C161d85fDC086AC6726bCEDe39f2CCB1Afa3bc8"),
+		common.HexToAddress("0x22C21D4F64aabA7ec837b6B93639dB8cF514dAD5"),
+		common.HexToAddress("0xBE6805C4c904B9cc39065ADC4cCcF4FCaB167AE6"),
 	}
 	enc, err := EncodeGenesisExtra(validators)
 	assert.NoError(t, err)
