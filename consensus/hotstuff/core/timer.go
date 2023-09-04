@@ -38,6 +38,9 @@ func (c *core) newRoundChangeTimer() {
 	timeout := time.Duration(c.config.RequestTimeout) * time.Millisecond
 	round := c.current.Round().Uint64()
 	if round > 0 {
+		// ZTODO: why timout + 2^round, supposed to be timeout * 2^round
+		// 6 -> 8, 10, 14
+		// 6 -> 12, 24
 		timeout += time.Duration(math.Pow(2, float64(round))) * time.Second
 	}
 	c.roundChangeTimer = time.AfterFunc(timeout, func() {

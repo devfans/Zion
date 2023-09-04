@@ -52,6 +52,7 @@ func (c *core) sendPrepare() {
 	} else {
 		request := c.current.PendingRequest()
 		if request == nil || request.block == nil || request.block.NumberU64() != c.HeightU64() {
+			// ZTODO: signal the miner to submit new request?
 			logger.Trace("Pending request invalid", "msg", code)
 			return
 		} else {
@@ -64,6 +65,7 @@ func (c *core) sendPrepare() {
 	// todo(fuk): waiting in `startNewRound`
 	if block.Time() > uint64(time.Now().Unix()) {
 		delay := time.Unix(int64(block.Time()), 0).Sub(time.Now())
+		// ZTODO: shall we delay block time here? or before the timer start?
 		time.Sleep(delay)
 		logger.Trace("delay to broadcast proposal", "msg", code, "time", delay.Milliseconds())
 	}
@@ -125,6 +127,7 @@ func (c *core) handlePrepare(data *Message) error {
 		return err
 	}
 
+	// ZTODO: Cache legal blocks
 	// ensure remote block is legal.
 	block := node.Block
 	if err := c.checkBlock(block); err != nil {

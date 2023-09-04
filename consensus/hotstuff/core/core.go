@@ -50,7 +50,7 @@ type core struct {
 	roundChangeTimer *time.Timer
 
 	pendingRequests   *prque.Prque
-	pendingRequestsMu *sync.Mutex
+	pendingRequestsMu *sync.Mutex  // ZTODO: uncecessary
 
 	lastVals hotstuff.ValidatorSet // validator set for last epoch
 	point    uint64                // epoch start height, header's extra contains valset
@@ -78,6 +78,7 @@ func New(backend hotstuff.Backend, config *hotstuff.Config, signer hotstuff.Sign
 }
 
 func (c *core) startNewRound(round *big.Int) {
+	// ZTODO: set a standalone logger
 	logger := c.logger.New()
 
 	if !c.isRunning {
@@ -134,6 +135,7 @@ func (c *core) startNewRound(round *big.Int) {
 	}
 
 	// calculate validator set
+	// ZTODO: check nil ret
 	c.valSet = c.backend.Validators(newView.HeightU64(), true)
 	c.valSet.CalcProposer(lastProposer, newView.Round.Uint64())
 
@@ -143,6 +145,7 @@ func (c *core) startNewRound(round *big.Int) {
 		return
 	}
 	if !changeView {
+		// ZTODO: locked block should not be unlocked even for a new view?
 		if err := c.current.Unlock(); err != nil {
 			logger.Error("Unlock node failed", "newView", newView, "err", err)
 			return
@@ -170,6 +173,7 @@ func (c *core) checkPoint(view *View) bool {
 		c.point = epochStart
 		c.lastVals = c.valSet.Copy()
 		c.logger.Trace("CheckPoint done", "view", view, "point", c.point)
+		// ZTODO: restart new round conflicts here
 		c.backend.ReStart()
 	}
 	if !c.isRunning {

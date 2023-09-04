@@ -331,6 +331,9 @@ func (h *nodeFetcher) batchRequest() {
 	}
 }
 
+// ZTODO: allow selectively fetch peers
+// check min epoch internal
+// check max validators per epoch
 func (h *nodeFetcher) handleGetStaticNodesMsg(peer *eth.Peer, from *enode.Node) error {
 	logger := h.logger.New("handle", "GetStaticNodesMsg", "local", identity(h.local), "from", identity(from))
 	logger.Trace("Node Fetcher")
@@ -341,6 +344,7 @@ func (h *nodeFetcher) handleGetStaticNodesMsg(peer *eth.Peer, from *enode.Node) 
 	}
 
 	validator := nodeAddress(peer.Node())
+	// ZTODO: allow recent or future validators to be registered
 	if !h.checkValidator(validator) {
 		logger.Trace("Failed to check msg from")
 		return nil

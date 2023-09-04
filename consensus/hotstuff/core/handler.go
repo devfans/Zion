@@ -33,6 +33,7 @@ func (c *core) Start(chain consensus.ChainReader) {
 
 	c.subscribeEvents()
 	go c.handleEvents()
+	// ZTODO: possible race condiation in edge cases
 
 	// Start a new round from last sequence + 1
 	c.startNewRound(common.Big0)
@@ -43,6 +44,7 @@ func (c *core) Stop() {
 	c.stopTimer()
 	c.unsubscribeEvents()
 	c.isRunning = false
+	// ZTODO: wait main loop exit here?
 }
 
 // Address implement core.Engine.Address
